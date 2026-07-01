@@ -23,7 +23,7 @@
     "Generated and cleaned a 10,000-record synthetic auto insurance dataset",
     "Engineered age groups and mileage categories for model interpretability",
     "Compared claim frequency patterns across driver age groups",
-    "Organized notebooks, scripts, outputs, and documentation for GitHub"
+    "Organized the single-file pipeline, outputs, and documentation for GitHub"
   ],
   "links": {
     "github": "https://github.com/lyjz9/auto-claims-frequency-modeling",
