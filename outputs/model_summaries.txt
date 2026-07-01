@@ -1,0 +1,63 @@
+Statistical Tests
+=================
+ANOVA F-statistic: 21.1842
+ANOVA p-value: 1.12781e-13
+Pearson correlation between driver age and current claims: -0.0237
+Pearson p-value: 0.0176027
+
+
+Poisson Regression Summary
+==========================
+                  Generalized Linear Model Regression Results                  
+===============================================================================
+Dep. Variable:     current_claim_count   No. Observations:                10000
+Model:                             GLM   Df Residuals:                     9990
+Model Family:                  Poisson   Df Model:                            9
+Link Function:                     Log   Scale:                          1.0000
+Method:                           IRLS   Log-Likelihood:                -3376.9
+Date:                 Wed, 01 Jul 2026   Deviance:                       4790.8
+Time:                         15:22:18   Pearson chi2:                 1.02e+04
+No. Iterations:                      6   Pseudo R-squ. (CS):           0.006813
+Covariance Type:             nonrobust                                         
+====================================================================================================
+                                       coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------
+Intercept                           -2.0759      0.167    -12.398      0.000      -2.404      -1.748
+C(age_group)[T.26-40]               -0.6753      0.098     -6.896      0.000      -0.867      -0.483
+C(age_group)[T.41-60]               -0.6058      0.089     -6.810      0.000      -0.780      -0.431
+C(age_group)[T.60+]                 -0.4294      0.084     -5.086      0.000      -0.595      -0.264
+C(gender)[T.M]                       0.0338      0.062      0.541      0.589      -0.089       0.156
+C(territory)[T.suburban]             0.0125      0.101      0.123      0.902      -0.186       0.211
+C(territory)[T.urban]                0.1853      0.104      1.775      0.076      -0.019       0.390
+C(mileage_category)[T.medium]        0.1149      0.128      0.895      0.371      -0.137       0.367
+C(mileage_category)[T.high]          0.2402      0.141      1.706      0.088      -0.036       0.516
+C(mileage_category)[T.very_high]     0.0221      0.296      0.075      0.940      -0.558       0.602
+====================================================================================================
+
+Negative Binomial Regression Summary
+====================================
+                  Generalized Linear Model Regression Results                  
+===============================================================================
+Dep. Variable:     current_claim_count   No. Observations:                10000
+Model:                             GLM   Df Residuals:                     9990
+Model Family:         NegativeBinomial   Df Model:                            9
+Link Function:                     Log   Scale:                          1.0000
+Method:                           IRLS   Log-Likelihood:                -3384.7
+Date:                 Wed, 01 Jul 2026   Deviance:                       4035.7
+Time:                         15:22:18   Pearson chi2:                 9.29e+03
+No. Iterations:                      5   Pseudo R-squ. (CS):           0.006118
+Covariance Type:             nonrobust                                         
+====================================================================================================
+                                       coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------
+Intercept                           -2.0750      0.176    -11.774      0.000      -2.420      -1.730
+C(age_group)[T.26-40]               -0.6752      0.104     -6.523      0.000      -0.878      -0.472
+C(age_group)[T.41-60]               -0.6045      0.094     -6.401      0.000      -0.790      -0.419
+C(age_group)[T.60+]                 -0.4282      0.090     -4.753      0.000      -0.605      -0.252
+C(gender)[T.M]                       0.0368      0.066      0.560      0.576      -0.092       0.166
+C(territory)[T.suburban]             0.0110      0.106      0.103      0.918      -0.197       0.219
+C(territory)[T.urban]                0.1826      0.110      1.663      0.096      -0.033       0.398
+C(mileage_category)[T.medium]        0.1141      0.135      0.848      0.397      -0.150       0.378
+C(mileage_category)[T.high]          0.2376      0.148      1.608      0.108      -0.052       0.527
+C(mileage_category)[T.very_high]     0.0164      0.309      0.053      0.958      -0.590       0.623
+====================================================================================================
