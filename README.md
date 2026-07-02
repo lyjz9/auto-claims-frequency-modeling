@@ -57,29 +57,6 @@ The pipeline regenerates the synthetic raw dataset, creates the cleaned modeling
 - Driver age alone is not enough to fully explain claim risk.
 - Additional variables such as driving experience, accident history, vehicle type, location, policy exposure, and claim severity would improve a real-world model.
 
-## Repository structure
-
-```text
-auto-claims-portfolio-project/
-|-- README.md
-|-- requirements.txt
-|-- auto_claims_pipeline.py
-|-- data/
-|   |-- README.md
-|   |-- raw/
-|   `-- processed/
-|-- outputs/
-|   |-- README.md
-|   |-- figures/
-|   |-- tables/
-|   `-- model_summaries.txt
-`-- docs/
-    |-- portfolio_project_page.md
-    |-- website_showcase_copy.md
-    |-- github_workflow.md
-    `-- project_card.json
-```
-
 ## Public-safety note
 
 The public version excludes private class materials, student identifiers, professor information, and class-only PDFs. The original private reference folder should stay out of the public GitHub repository.
