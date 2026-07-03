@@ -4,7 +4,7 @@ This project analyzes how driver age relates to auto insurance claim frequency u
 
 ## Timeline note
 
-Original analysis completed in December 2025. Public GitHub repository organized and documented in July 2026 as a portfolio-ready version.
+Original analysis completed in December 2025. Public GitHub repository organized and documented in July 2026.
 
 ## Project goal
 
